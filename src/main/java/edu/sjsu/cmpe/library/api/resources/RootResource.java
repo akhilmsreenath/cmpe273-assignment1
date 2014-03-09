@@ -26,7 +26,7 @@ public class RootResource {
     public Response getRoot() {
 	LinksDto links = new LinksDto();
 	links.addLink(new LinkDto("create-book", "/books", "POST"));
-
+System.out.println("Inside Root Resource");
 	return Response.ok(links).build();
     }
 }
